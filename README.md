@@ -22,14 +22,13 @@ a file, directory or a Go package:
 ```sh
 $ logmessage foo.go # pass a file
 $ logmessage ./...  # recursively analyze all files
-$ logmessage github.com/fatih/gomodifytags # or pass a package
+$ logmessage github.com/bakins/somepackage # or pass a package
 ```
 
 When called it displays the error with the line and column:
 
 ```
-gomodifytags@v1.0.1/main.go:200:16: log messages should not be capitalized
-gomodifytags@v1.0.1/main.go:641:17: call could wrap the error with error-wrapping directive %w
+somepackage@v1.0.1/main.go:200:16: log messages should not be capitalized
 ```
 
 ## Acknowledgements
